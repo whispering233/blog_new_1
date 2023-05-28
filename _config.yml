@@ -3,13 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: whispering233'world
 subtitle: ''
-description: ''
+description: 'learning in using'
 keywords:
-author: John Doe
-language: en
+author: whispering233
+language: zh-CN
 timezone: ''
+favicon: /images/avatar.jpg
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -97,9 +98,21 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git #部署方式
+  repository: git@github.com:whispering233/blog_new_1.git #关联github仓库
+  branch: run-page #部署分支
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+marked:
+  prependRoot: true
+  postAsset: true
